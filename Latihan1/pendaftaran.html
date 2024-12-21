@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informasi Universitas</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+      }
+
+      header {
+        background-color: #000080cc;
+        color: white;
+        padding: 15px 20px;
+      }
+
+      header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 24px;
+        color: white;
+      }
+
+      header nav a {
+        color: white;
+        margin-left: 15px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      header nav a:hover {
+        text-decoration: underline;
+      }
+
+      section {
+        padding: 20px;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      h1, h2, h3 {
+        color: #333;
+      }
+
+      footer {
+        background-color: #00004d;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      form {
+        background: white;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+      }
+
+      form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+
+      form input, form select, form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 14px;
+      }
+
+      form button {
+        background-color: #000080cc;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      form button:hover {
+        background-color: #000066;
+      }
+
+      .radio-group {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 15px;
+      }
+
+      .radio-group label {
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <h1>Universitas Pamulang</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="informasi.html">Informasi</a>
+          <a href="jadwal.html">Jadwal Pendaftaran</a>
+          <a href="pendaftaran.html">Pendaftaran</a>
+          <a href="hubungi.html">Hubungi Kami</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Form Pendaftaran -->
+    <section>
+      <h1>Formulir Pendaftaran Mahasiswa Baru</h1>
+      <form action="/submit-pendaftaran" method="post">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" required />
+
+        <label>Jenis Kelamin</label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="male" required /> Laki-laki</label>
+          <label><input type="radio" name="gender" value="female" required /> Perempuan</label>
+        </div>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required />
+
+        <label for="no_hp">Nomor Telepon</label>
+        <input type="tel" id="no_hp" name="no_hp" placeholder="Masukkan nomor telepon Anda" required />
+
+        <label for="program_studi">Program Studi</label>
+        <select id="program_studi" name="program_studi" required>
+          <option value="" selected disabled>Pilih Program Studi</option>
+          <option value="informatika">Sistem Informasi</option>
+          <option value="informatika">Teknik Informatika</option>
+          <option value="manajemen">Manajemen</option>
+          <option value="akuntansi">Akuntansi</option>
+          <option value="hukum">Hukum</option>
+        </select>
+
+        <label for="alamat">Alamat</label>
+        <textarea id="alamat" name="alamat" rows="4" placeholder="Masukkan alamat lengkap Anda" required></textarea>
+
+        <button type="submit">Daftar Sekarang</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Karmilah Rahmawati. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

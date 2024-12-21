@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universitas Pamulang</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: url("Image/Viktor.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: white;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5); /* Gelapkan dengan transparansi 50% */
+        z-index: -1; /* Menempatkan overlay di belakang konten */
+      }
+
+      /* Gaya untuk header */
+      header {
+        background-color: #000080cc; /* Warna navy dengan transparansi */
+        color: white;
+        padding: 15px 20px;
+        font-family: Arial, sans-serif;
+      }
+
+      footer {
+        background-color: #00004d; 
+        color: white; 
+        padding: 10px 0; 
+        text-align: center; 
+        font-family: Arial, sans-serif; 
+        font-size: 14px; 
+        position: relative;
+      }
+
+      header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      header nav a {
+        color: white;
+        margin-left: 15px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      header nav a:hover {
+        text-decoration: underline;
+      }
+
+      /* Gaya untuk section */
+      section {
+        padding: 50px 20px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+
+      #home {
+        height: 75vh; /* Tinggi penuh layar */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        text-align: center;
+        color: white;
+      }
+
+      #pendaftaran h2 {
+        font-size: 28px;
+        color: navy;
+        margin-bottom: 20px;
+      }
+
+      #pendaftaran p {
+        font-size: 16px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <h1>Universitas Pamulang</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="informasi.html">Informasi</a>
+          <a href="jadwal.html">Jadwal Pendaftaran</a>
+          <a href="pendaftaran.html">Pendaftaran</a>
+          <a href="hubungi.html">Hubungi Kami</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Section Home -->
+    <section id="home">
+      <div>
+        <h1>Selamat Datang di Universitas</h1>
+        <p>Selamat datang di situs resmi Universitas Pamulang. Temukan informasi lengkap tentang program, pendaftaran, dan layanan kami di sini.</p>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <p style="display: inline-block; color: white; padding: 5px 10px; margin: 0; border-radius: 5px;">
+                &copy; 2024 Karmilah Rahmawati. All Rights Reserved.
+              </p>
+        </div>
+    </footer>
+  </body>
+</html>
